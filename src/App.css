@@ -24,3 +24,54 @@
 .desktop-nav {
   display: none;
 }
+
+/* HeroComponent */
+.hero-bg {
+  background-color: hsl(256, 26%, 20%);
+  padding-bottom: 7em;
+  position: relative;
+}
+.hero-container h1 {
+  color: #fff;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 3.1rem;
+  padding: 1.8em 0 .2em 0;
+}
+.hero-container p {
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6em;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 2.1em;
+}
+.hero-container button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: .6em  2em;
+}
+.mobile-left-intro {
+  background-image: url('/public/images/bg-pattern-intro-left-mobile.svg');
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 100%;
+  position: absolute;
+  top: 46.5%;
+}
+.mobile-right-intro {
+  background-image: url('/public/images/bg-pattern-intro-right-mobile.svg');
+  background-repeat: no-repeat;
+  height: 390px;
+  width: 100%;
+  position: absolute;
+  top: 84%;
+  left: 67%;
+}
