@@ -1,9 +1,10 @@
   import NavComponent from './Components/nav-component';
+  import HeroComponent from './Components/hero-component';
+  import ProductComponent from './Components/products-component';
+  import HowWeWorkComponent from './Components/how-we-work-component';
+  import FooterComponent from './Components/footer-component';
 
 import './App.css';
-import HeroComponent from './Components/hero-component';
-import ProductComponent from './Components/products-component';
-import HowWeWorkComponent from './Components/how-we-work-component';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HeroComponent />
       <ProductComponent />
       <HowWeWorkComponent />
+      <FooterComponent />
     </div>
   );
 }
