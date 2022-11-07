@@ -7,6 +7,8 @@
 
 .App {
   text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
 /* NavComponent */
@@ -74,4 +76,76 @@
   position: absolute;
   top: 84%;
   left: 67%;
+}
+
+/* ProductComponent */
+.products {
+  padding: 7em 0;
+}
+.dash {
+  border: 1px solid rgb(179, 165, 180);
+  width: 40%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.products-title {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 3.1rem;
+}
+.products-container {
+  width: 90%;
+  margin: auto;
+}
+.products-container div img {
+  padding: 3em 0;
+}
+.products-container div h2 {
+  color: hsl(270, 9%, 17%);
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding-bottom: .5em;
+}
+.products-container div p {
+  color: hsl(273, 4%, 51%);
+  font-family: 'Karla', serif;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+
+/* HowWeWorkComponent */
+.we-work {
+  background: hsl(256, 26%, 20%);
+  padding: 3.3em 0;
+  width: 90%;
+  margin: 0 auto 6em auto;
+  position: relative;
+}
+.we-work-container h1 {
+  color: #fff;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  padding-bottom: 1em;
+}
+.we-work-container button {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+  padding: .8em 2em;
+  text-transform: uppercase;
+}
+.we-work-bg {
+  background-image: url("/public/images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 320px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
 }
