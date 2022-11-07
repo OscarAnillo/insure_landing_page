@@ -8,3 +8,19 @@
 .App {
   text-align: center;
 }
+
+/* NavComponent */
+.nav {
+  background-color: #fff;
+  padding: 1.9em 0;
+}
+.nav section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.desktop-nav {
+  display: none;
+}
