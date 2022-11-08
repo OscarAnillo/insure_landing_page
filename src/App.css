@@ -337,7 +337,6 @@
   text-align: left;
   width: 70%;
   margin: auto;
-  /* border: 1px solid red; */
 }
 .dash {
   border: 1px solid rgb(179, 165, 180);
@@ -371,6 +370,87 @@
 }
 .products-container div p {
   width: 88%;
+}
+
+/* HowWeWorkComponent */ 
+.we-work {
+  padding: 3.3em 0;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 6em auto;
+}
+.we-work-container {
+  width: 90%;
+  margin: auto;
+  text-align: right;
+}
+.we-work-container h1 {
+  font-size: 3.4rem;
+  padding-bottom: 0;
+  text-align: left;
+  width: 40%;
+}
+.we-work-container button {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+  padding: .8em 2em;
+  text-transform: uppercase;
+  position: relative;
+  top: -70px;
+}
+.we-work-bg {
+  display: none;
+}
+.we-work-bg-desktop {
+  display: block;
+  background-image: url("/public/images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 292px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+}
+/* FooterComponent */
+.footer {
+  background-image: url("/public/images/bg-pattern-footer-desktop.svg");
+  background-position: left top;
+}
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+.footer-section > div {
+  padding-bottom: 1.5em;
+}
+.socials img {
+  margin: 0;
+  margin-left: 1em;
+}
+.sources {
+  margin: 1em auto 0 auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+.sources p {
+  font-size: 1rem;
+  margin: 1em 0;
+}
+.sources .main-item {
+  font-size: 1.1rem;
 }
 
 }
