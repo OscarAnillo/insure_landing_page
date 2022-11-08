@@ -69,6 +69,9 @@
   padding-bottom: 7em;
   position: relative;
 }
+.hero-container .desktop-img-intro {
+  display: none;
+}
 .hero-container h1 {
   color: #fff;
   font-family: 'DM Serif Display', serif;
@@ -218,4 +221,114 @@
   color: hsl(273, 4%, 51%);
   font-size: 1rem;
   padding: 1.5em 0;
+}
+
+@media(min-width: 1000px) {
+  .nav section {
+    width: 70%;
+  }
+  .desktop-nav {
+    display: block;
+  }
+  .desktop-nav ul {
+    display: flex;
+    align-items: center;
+    color: hsl(273, 4%, 51%);
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+  }
+  .desktop-nav ul li {
+    margin-left: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+  }
+  .desktop-nav ul li:last-child {
+    border: 1px solid #000;
+    color: #000;
+    padding: .6em 1em;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  /* HeroComponent */
+.hero-bg {
+  background-color: hsl(256, 26%, 20%);
+  padding-bottom: 7em;
+  height: 580px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+.hero-container > div {
+  height: 580px;
+}
+.hero-container .mobile-img-intro {
+  display: none;
+}
+.hero-container .desktop-img-intro {
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 55.5%;
+  height: 680px;
+}
+.hero-container h1 {
+  font-size: 5rem;
+  padding: 2.5em 0 .2em 0;
+  margin: 0;
+  width: 50%;
+}
+.hero-container p {
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6em;
+  width: 45%;
+  margin: 0;
+  padding-bottom: 2.1em;
+}
+.hero-container button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: .6em  2em;
+}
+.mobile-left-intro {
+  display: none;
+}
+.mobile-right-intro {
+  display: none;
+}
+.desktop-left-intro {
+  display: block;
+  background-image: url("/public/images/bg-pattern-intro-left-desktop.svg");
+  width: 195px;
+  height: 520px;
+  top: 74%;
+}
+.desktop-right-intro {
+  display: block;
+  background-image: url("/public/images/bg-pattern-intro-right-desktop.svg");
+  background-position: right;
+  position: absolute;
+  width: 700px;
+  height: 650px;
+  top: -4%;
+  left: 65%;
+
+}
+
 }
