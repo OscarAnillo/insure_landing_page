@@ -25,10 +25,13 @@ function App() {
   return (
     <div className="App">
       <NavComponent showMenu={showMenu} clickHandler={clickHandler} />
-      <HeroComponent />
-      <ProductComponent />
-      <HowWeWorkComponent />
-      <FooterComponent />
+      <div className='container'>
+
+        <HeroComponent />
+        <ProductComponent />
+        <HowWeWorkComponent />
+        <FooterComponent />
+      </div>
     </div>
   );
 }

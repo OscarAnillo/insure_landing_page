@@ -10,7 +10,10 @@
   overflow: hidden;
   position: relative;
 }
-
+.container {
+  max-width: 375px;
+  margin: auto;
+}
 /* NavComponent */
 .nav {
   background-color: #fff;
@@ -67,6 +70,11 @@
 .hero-bg {
   background-color: hsl(256, 26%, 20%);
   padding-bottom: 7em;
+  position: relative;
+}
+.hero-container .mobile-img-intro {
+  display: block;
+  width: 100%;
   position: relative;
 }
 .hero-container .desktop-img-intro {
@@ -224,6 +232,11 @@
 }
 
 @media(min-width: 1000px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+
   .nav section {
     width: 70%;
   }
