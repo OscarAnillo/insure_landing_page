@@ -13,7 +13,7 @@ export default function NavComponent({ showMenu, clickHandler }){
                         <li>View plans</li>
                     </ul>
                 </div>
-                <div onClick={clickHandler}> 
+                <div onClick={clickHandler} className="mobile-nav"> 
                 {!showMenu ? <img src="images/icon-hamburger.svg" alt="" />
                 : <img src="images/icon-close.svg" alt="" />
                 }
