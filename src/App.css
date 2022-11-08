@@ -26,6 +26,42 @@
 .desktop-nav {
   display: none;
 }
+.inner-menu {
+  background-color: rgb(43, 40, 47);
+  position: absolute;
+  top: 90px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+}
+.inner-menu > div:nth-child(1) {
+  padding: 2em 0;
+}
+.inner-menu div h2 {
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 1.5em 0;
+  text-transform: uppercase;
+}
+.inner-menu div h2:last-child {
+  border: 1px solid #fff;
+  width: 90%;
+  margin: auto;
+  padding: .5em 0;
+}
+.inner-menu-bg {
+  background-image: url("/public/images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin-top: 7.5em;
+}
 
 /* HeroComponent */
 .hero-bg {

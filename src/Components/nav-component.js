@@ -1,4 +1,4 @@
-export default function NavComponent(){
+export default function NavComponent({ showMenu, clickHandler }){
     return (
         <nav className="nav">
             <section>
@@ -13,10 +13,23 @@ export default function NavComponent(){
                         <li>View plans</li>
                     </ul>
                 </div>
-                <div>
-                    <img src="images/icon-hamburger.svg" alt="" />
+                <div onClick={clickHandler}> 
+                {!showMenu ? <img src="images/icon-hamburger.svg" alt="" />
+                : <img src="images/icon-close.svg" alt="" />
+                }
                 </div>
             </section>
+            {showMenu && 
+            <div className="inner-menu">
+                <div>
+                    <h2>How we work</h2>
+                    <h2>Blog</h2>
+                    <h2>Account</h2>
+                    <h2>View Plans</h2>
+                </div>
+                <div className="inner-menu-bg"></div>
+            </div>
+            }
         </nav>
     )
 }
