@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +7,215 @@
 
 .App {
   text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* NavComponent */
+.nav {
+  background-color: #fff;
+  padding: 1.9em 0;
+}
+.nav section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.desktop-nav {
+  display: none;
+}
+.inner-menu {
+  background-color: rgb(43, 40, 47);
+  position: absolute;
+  top: 90px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+}
+.inner-menu > div:nth-child(1) {
+  padding: 2em 0;
+}
+.inner-menu div h2 {
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 1.5em 0;
+  text-transform: uppercase;
+}
+.inner-menu div h2:last-child {
+  border: 1px solid #fff;
+  width: 90%;
+  margin: auto;
+  padding: .5em 0;
+}
+.inner-menu-bg {
+  background-image: url("/public/images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin-top: 7.5em;
+}
+
+/* HeroComponent */
+.hero-bg {
+  background-color: hsl(256, 26%, 20%);
+  padding-bottom: 7em;
+  position: relative;
+}
+.hero-container h1 {
+  color: #fff;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 3.1rem;
+  padding: 1.8em 0 .2em 0;
+}
+.hero-container p {
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6em;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 2.1em;
+}
+.hero-container button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: .6em  2em;
+}
+.mobile-left-intro {
+  background-image: url('/public/images/bg-pattern-intro-left-mobile.svg');
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 100%;
+  position: absolute;
+  top: 46.5%;
+}
+.mobile-right-intro {
+  background-image: url('/public/images/bg-pattern-intro-right-mobile.svg');
+  background-repeat: no-repeat;
+  height: 390px;
+  width: 100%;
+  position: absolute;
+  top: 84%;
+  left: 67%;
+}
+
+/* ProductComponent */
+.products {
+  padding: 7em 0;
+}
+.dash {
+  border: 1px solid rgb(179, 165, 180);
+  width: 40%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.products-title {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 3.1rem;
+}
+.products-container {
+  width: 90%;
+  margin: auto;
+}
+.products-container div img {
+  padding: 3em 0;
+}
+.products-container div h2 {
+  color: hsl(270, 9%, 17%);
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding-bottom: .5em;
+}
+.products-container div p {
+  color: hsl(273, 4%, 51%);
+  font-family: 'Karla', serif;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+
+/* HowWeWorkComponent */
+.we-work {
+  background: hsl(256, 26%, 20%);
+  padding: 3.3em 0;
+  width: 90%;
+  margin: 0 auto 6em auto;
+  position: relative;
+}
+.we-work-container h1 {
+  color: #fff;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  padding-bottom: 1em;
+}
+.we-work-container button {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+  padding: .8em 2em;
+  text-transform: uppercase;
+}
+.we-work-bg {
+  background-image: url("/public/images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 320px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+}
+
+/* FooterComponent */
+.footer {
+  background-image: url("/public/images/bg-pattern-footer-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 5.5em 0;
+  background-color: #eee;
+}
+.footer-section > div {
+  padding-bottom: 1.5em;
+}
+.socials img {
+  margin: 0 .6em;
+}
+.sources {
+  border-top: 1px solid rgb(217, 217, 217);
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  width: 90%;
+  margin: 1em auto 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.sources p {
+  color: hsl(256, 26%, 20%);
+  font-size: .9rem;
+  margin: .7em 0;
+}
+.sources .main-item {
+  color: hsl(273, 4%, 51%);
+  font-size: 1rem;
+  padding: 1.5em 0;
 }
